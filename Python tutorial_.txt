@@ -1,0 +1,301 @@
+print("==========================================")
+print("          MY PYTHON TUTORIAL")
+print("              PRELIM TO FINALS")
+print("==========================================")
+
+while True:
+
+    print("\n========== CHOOSE A LESSON ==========")
+
+    print("\n=== PRELIM ===")
+    print("1. Introduction to Programming")
+    print("2. Python Basic Syntax")
+    print("3. Arithmetic Operators")
+    print("4. Basic Input and Output")
+
+    print("\n=== MIDTERM ===")
+    print("5. Relational Operators")
+    print("6. If Statement")
+    print("7. If-Elif Statement")
+    print("8. If-Elif-Else Statement")
+    print("9. Nested Condition")
+    print("10. Logical Operators")
+    print("11. AND Operator")
+    print("12. OR Operator")
+    print("13. NOT Operator")
+
+    print("\n=== FINALS ===")
+    print("14. Iterations")
+    print("15. For Loop")
+    print("16. While Loop")
+    print("17. Python Quiz (1-5)")
+
+    print("\n0. Exit")
+
+    choice = input("\nEnter your choice: ")
+
+
+    if choice == "1":
+        print("\nINTRODUCTION TO PROGRAMMING")
+        print("Programming is giving instructions to a computer.")
+        print("Python is a programming language.")
+        print("It is used to create programs and applications.")
+
+    elif choice == "2":
+        print("\nPYTHON BASIC SYNTAX")
+        print("Syntax means the rules of writing code.")
+        print("Example:")
+        print('print("Hello World!")')
+        print("Output:")
+        print("Hello World!")
+
+    elif choice == "3":
+        print("\nARITHMETIC OPERATORS")
+        print("Choose an operation:")
+        print("1. Addition (+)")
+        print("2. Subtraction (-)")
+        print("3. Multiplication (*)")
+        print("4. Division (/)")
+        print("5. Modulus (%)")
+        print("6. Exponentiation (**)")
+        print("7. Floor Division (//)")
+
+        operator = input("\nEnter your choice: ")
+
+        if operator in ["1", "2", "3", "4", "5", "6", "7"]:
+            a = float(input("Enter first number: "))
+            b = float(input("Enter second number: "))
+
+            if operator == "1":
+                print("Addition:", a + b)
+            elif operator == "2":
+                print("Subtraction:", a - b)
+            elif operator == "3":
+                print("Multiplication:", a * b)
+            elif operator == "4":
+                if b != 0:
+                    print("Division:", a / b)
+                else:
+                    print("Cannot divide by zero!")
+            elif operator == "5":
+                if b != 0:
+                    print("Modulus:", a % b)
+                else:
+                    print("Cannot use modulus with zero!")
+            elif operator == "6":
+                print("Exponentiation:", a ** b)
+            elif operator == "7":
+                if b != 0:
+                    print("Floor Division:", a // b)
+                else:
+                    print("Cannot divide by zero!")
+        else:
+            print("Invalid operator choice!")
+
+    elif choice == "4":
+        print("\nBASIC INPUT AND OUTPUT")
+        name = input("Enter your name: ")
+        age = input("Enter your age: ")
+
+        print("Hello", name)
+        print("Your age is", age)
+
+
+    elif choice == "5":
+        print("\nRELATIONAL OPERATORS")
+        a = 10
+        b = 5
+
+        print("a =", a)
+        print("b =", b)
+        print("a > b:", a > b)
+        print("a < b:", a < b)
+        print("a == b:", a == b)
+        print("a != b:", a != b)
+        print("a >= b:", a >= b)
+        print("a <= b:", a <= b)
+
+    elif choice == "6":
+        print("\nIF STATEMENT")
+        age = int(input("Enter your age: "))
+
+        if age >= 18:
+            print("You are an adult.")
+
+    elif choice == "7":
+        print("\nIF-ELIF STATEMENT")
+        grade = int(input("Enter your grade: "))
+
+        if grade >= 90:
+            print("Excellent!")
+        elif grade >= 80:
+            print("Very Good!")
+        elif grade >= 75:
+            print("Passed!")
+        else:
+            print("Needs Improvement.")
+
+    elif choice == "8":
+        print("\nIF-ELIF-ELSE STATEMENT")
+        number = int(input("Enter a number: "))
+
+        if number > 0:
+            print("Positive number.")
+        elif number < 0:
+            print("Negative number.")
+        else:
+            print("Zero.")
+
+    elif choice == "9":
+        print("\nNESTED CONDITION")
+        age = int(input("Enter your age: "))
+
+        if age >= 18:
+            if age <= 60:
+                print("You are within the age range.")
+            else:
+                print("You are above the age range.")
+        else:
+            print("You are below the age range.")
+
+    elif choice == "10":
+        print("\nLOGICAL OPERATORS")
+        print("Logical operators combine conditions.")
+        print("AND - Both conditions must be True.")
+        print("OR - At least one condition must be True.")
+        print("NOT - Reverses the result.")
+
+    elif choice == "11":
+        print("\nAND OPERATOR")
+        age = int(input("Enter your age: "))
+
+        if age >= 18 and age <= 30:
+            print("You are between 18 and 30.")
+        else:
+            print("You are outside the age range.")
+
+    elif choice == "12":
+        print("\nOR OPERATOR")
+        day = input("Enter a day: ").lower()
+
+        if day == "saturday" or day == "sunday":
+            print("It is the weekend!")
+        else:
+            print("It is a regular weekday.")
+
+    elif choice == "13":
+        print("\nNOT OPERATOR")
+        answer = input("Are you a student? (yes/no): ").lower()
+
+        if not answer == "yes":
+            print("You are not a student.")
+        else:
+            print("You are a student.")
+
+
+    elif choice == "14":
+        print("\nITERATIONS")
+        print("Iteration means repeating instructions.")
+        print("Python uses for loops and while loops.")
+
+    elif choice == "15":
+        print("\nFOR LOOP")
+        print("Printing numbers from 1 to 5:")
+
+        for x in range(1, 6):
+            print(x)
+
+    elif choice == "16":
+        print("\nWHILE LOOP")
+        x = 1
+
+        while x <= 5:
+            print(x)
+            x += 1
+
+
+    elif choice == "17":
+        print("\n========== PYTHON QUIZ ==========")
+        print("Answer each question using A, B, or C.")
+
+        score = 0
+
+        print("\n1. Which function displays text?")
+        print("A. input()")
+        print("B. print()")
+        print("C. range()")
+        answer = input("Your answer: ").upper()
+
+        if answer == "B":
+            print("Correct!")
+            score += 1
+        else:
+            print("Incorrect. The answer is B.")
+
+        print("\n2. Which operator is used for multiplication?")
+        print("A. +")
+        print("B. -")
+        print("C. *")
+        answer = input("Your answer: ").upper()
+
+        if answer == "C":
+            print("Correct!")
+            score += 1
+        else:
+            print("Incorrect. The answer is C.")
+
+        print("\n3. Which statement is used for decision-making?")
+        print("A. if")
+        print("B. for")
+        print("C. print")
+        answer = input("Your answer: ").upper()
+
+        if answer == "A":
+            print("Correct!")
+            score += 1
+        else:
+            print("Incorrect. The answer is A.")
+
+        print("\n4. Which loop repeats while a condition is True?")
+        print("A. if")
+        print("B. while")
+        print("C. print")
+        answer = input("Your answer: ").upper()
+
+        if answer == "B":
+            print("Correct!")
+            score += 1
+        else:
+            print("Incorrect. The answer is B.")
+
+        print("\n5. What does input() do?")
+        print("A. Gets information from the user")
+        print("B. Displays text")
+        print("C. Ends the program")
+        answer = input("Your answer: ").upper()
+
+        if answer == "A":
+            print("Correct!")
+            score += 1
+        else:
+            print("Incorrect. The answer is A.")
+
+        print("\n========== QUIZ RESULT ==========")
+        print("Your score:", score, "/ 5")
+
+        if score == 5:
+            print("Excellent! Perfect score!")
+        elif score >= 3:
+            print("Good job! Keep practicing!")
+        else:
+            print("Keep studying. You can do it!")
+
+    elif choice == "0":
+        print("\nThank you for using MY PYTHON TUTORIAL!")
+        print("Keep learning and practicing Python!")
+        break
+
+    else:
+        print("\nInvalid choice. Please choose from the menu.")
+
+    input("\nPress ENTER to go back to the menu...")
